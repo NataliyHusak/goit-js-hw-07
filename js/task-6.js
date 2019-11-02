@@ -6,6 +6,7 @@ inputEnter.addEventListener("blur", inputValue);
 function inputValue() {
   if (inputEnter.value.length === 6) {
     inputEnter.classList.add("valid");
+    inputField.classList.remove("invalid");
   } else inputEnter.classList.add("invalid");
 }
 
